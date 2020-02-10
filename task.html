@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="stylesheet1.css" type="text/css">
+
+<body>
+    <div class="inputNumber">
+        <button onclick="buttonClick1()">+</button>
+        <input type="text" id="num" value="0"></input>
+        <button onclick="buttonClick2()">-</button>
+    </div>
+</body>
+<script>
+    var count = 0
+
+    function buttonClick1() {
+        document.getElementById('num').value = ++count;
+        if (count >= 5) {
+            count = 5;
+            document.getElementById('num').value = count;
+
+        }
+    }
+
+    function buttonClick2() {
+        document.getElementById('num').value = --count;
+        if (count <= -5) {
+            count = -5;
+            document.getElementById('num').value = count;
+        }
+    }
+</script>

@@ -1,0 +1,35 @@
+body {
+    background-color: RGB(55, 55, 130);
+}
+
+#num {
+    width: 50px;
+    height: 50px;
+    margin-left: 150px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+button {
+    margin-left: 150px;
+    border: 1px solid;
+    border-radius: 500px;
+    width: 50px;
+    height: 50px;
+    color: RGB(255, 255, 255);
+    background-color: RGB(216, 31, 164);
+    text-size-adjust: 100px bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: RGB(55, 55, 130);
+    transition: all 0.2s ease-in-out;
+}
+
+.inputNumber {
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-gap: 10px;
+    margin: auto;
+}
